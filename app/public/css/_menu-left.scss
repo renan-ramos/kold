@@ -1,0 +1,45 @@
+//Trigger do Menu
+#menu-trigger {
+    height: 30px;
+    cursor: pointer;
+    
+    div {
+        width: 30px;
+        height: 4px;
+        background: #fff;
+        margin-top: 4px;
+    }
+}
+
+//Menu left
+.menu-hide {
+    z-index: 9999;
+    background: #333;
+	width: 280px;
+	height: 100%;
+	position: absolute;
+	box-shadow: 1px 2px 3px #DDD;
+	left: -100%;
+	transition: left 0.5s ease 0s;
+}
+
+.menu-left, .list-group {
+    margin-top: 15px;
+}
+.menu-left {
+    input {
+        width: 100%;
+    }    
+
+    .list-group {
+        
+        li {
+            background-color: initial;
+
+            a {
+                color: #fff;
+                font: .8em "Open Sans", "sans serif";        
+            }
+        }
+    }
+}

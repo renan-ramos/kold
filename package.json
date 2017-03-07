@@ -1,0 +1,24 @@
+{
+  "name": "kold",
+  "version": "1.0.0",
+  "description": "Site do mundo de campanha de Kold",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Kold",
+    "D&D",
+    "rpg"
+  ],
+  "author": "Renan Garcia",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/renan-ramos/kold"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.14.1"
+  }
+}

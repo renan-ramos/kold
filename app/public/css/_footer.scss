@@ -1,0 +1,30 @@
+footer {
+    background: $preto;
+    margin-top: 50px;
+    padding-top: 50px;
+    background: #0c0c0b;
+
+    .container-fluid:last-child {
+        background: $preto;
+    }
+    .copyright {
+        color: $branco;
+        text-align: center;
+        padding: 10px 0;
+        font-size: .8em;
+    }
+}
+
+.links {
+    color: $branco;
+    list-style: none;
+    font-size: .9em;
+}
+
+.headerDivider {
+    margin-top: -40px;
+
+    &:last-of-type{
+        padding-right: 45px;
+    }
+}

@@ -1,0 +1,13 @@
+.button {
+    @include border-radius(3px);
+    border: solid 1px #3f3f3f;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    background-color: $secondary-black;
+
+    a {
+        font: .8em "Open Sans", "Sans serif";
+        color: $branco;
+    }
+}
