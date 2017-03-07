@@ -3,8 +3,11 @@
   "version": "1.0.0",
   "description": "Site do mundo de campanha de Kold",
   "main": "index.js",
+  "engines": {
+    "node": "6.9.1"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "keywords": [
     "Kold",
