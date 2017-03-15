@@ -1,18 +1,20 @@
-//Imports Sass Utilities
-@import "variables";
-@import "mixins";
+//Imports Sass Helpers
+@import "helpers/variables";
+@import "helpers/mixins";
+@import "helpers/utilities";
 
 //Imports Layout Structure
-@import "menu-top";
-@import "menu-left";
-@import "article";
-@import "footer";
+@import "layout/responsive";
 
-//Imports Components
-@import "button";
+//Imports components
+@import "components/menu-top";
+@import "components/menu-left";
+@import "components/article";
+@import "components/footer";
+@import "components/button";
 
 body {
-    background:  url(../img/interface/page-background.jpg) 0 0 repeat #f9f7ec;
+    background:  url($img-dir + "page-background.jpg") 0 0 repeat #f9f7ec;
     position: relative;
     min-height:100%; 
 }

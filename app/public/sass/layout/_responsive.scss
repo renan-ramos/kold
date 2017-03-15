@@ -1,0 +1,91 @@
+// Breakpoints follow Bootstrap 4 settings
+// Small devices (landscape phones, 576px and up)
+
+// Up -> Down
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+    .caption {
+        width: 100%;
+    }
+    .itens-menu, 
+    .login-desktop,
+    .form-busca { 
+        display: none; 
+    }
+    .btn-busca { padding: 0 10px; }
+    .footer {
+        flex-direction: column;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {}
+
+
+// Down -> Up
+@media (min-width: 576px) {
+    .caption {
+        width: 600px;
+    }
+    .menu-trigger, .login-mobile {
+        display: none;
+    }
+    .itens-menu {
+        display: inline-block;
+    }
+    .login-desktop {
+        display: block;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .itens-menu {
+        font-size: .8em;
+    }
+    
+    .input-hide {
+        visibility: visible;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { 
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { 
+
+}
+
+// Exclusive devices
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767px) {}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991px) {
+    .input-hide {
+        visibility: hidden;
+        position: absolute;
+        right: 37px;
+        opacity: 0;
+        width: 37em;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {}

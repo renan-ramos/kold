@@ -1,0 +1,46 @@
+article {
+    @include border-radius(2px);
+    @include drop-shadow;
+    border: solid 1px $branco;
+    //background: #dadac7;
+    background: url("../img/interface/banner-bg.png") repeat-y;;
+    padding: 50px 0 0 0;
+    margin: 15px;
+
+    img.float-left {
+        margin: -50px 0 0 -15px;
+    }
+    
+    img.float-right {
+        margin: -50px -15px 0 0;
+    }
+
+    p {
+        font: 1em "Open Sans", sans-serif;
+        color: #4d4949;
+        margin: 30px 0;
+    }
+
+    button {
+        margin-bottom: 30px;
+    }
+}
+
+// .banner-caption-left {
+//     margin: -20px 0 0 40px;
+// }
+
+// .banner-caption-right {
+//     margin: -20px 15px 0 0;
+// }
+
+@media (max-width: 575px) {
+    article {
+        img {
+            display: none;
+        }
+        button {
+            width: 100%;
+        }
+    }
+}

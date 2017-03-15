@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Kold - Aonde a Aventura Começa</title>
 
@@ -23,16 +23,24 @@
 </head>
 <body>
 
-    <nav class="menu-hide" id="menu-hide">
-        
-        <div class="menu-left container">
-            
+    <!-- menu-left body overlay -->
+    <div class="overlay"></div> 
+    <nav class="menu-hide">
+
+        <div class="menu-left container d-flex flex-column">
+
+            <a class="menu-left-logo" href="#">
+                <img src="/img/interface/menu-left-logo.png" alt="Logo do cenário de campanha de Kold" title="Kold, um mundo de aventuras"
+                     srcset="/img/interface/menu-left-logo.png 1x,
+                             /img/interface/menu-left-logo-r.png 2x">
+            </a>
+
             <form>
                     
                 <div class="input-group">
                     
-                    <input class="inputBusca" type="text" placeholder="Buscar...">
-                    <button class="buttonBusca" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                    <input class="input-busca" type="text" placeholder="Buscar...">
+                    <button class="btn-busca" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
 
                 </div>
 
@@ -50,25 +58,25 @@
         
     </nav>
     
-    <header >
+    <header class="container-fluid">
        
-        <nav class="container">
+        <nav class="container no-padding">
             
             <div class="d-flex justify-content-between align-items-center flex-wrap">
 
-                <div class="menu-trigger" id="menu-trigger">
+                <div class="menu-trigger">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
 
                 <div>
-                    <a class="" href="#"><img src="/img/logo-small.png" alt="Logo do cenário de campanha de Kold" title="Kold, um mundo de aventuras"></a>
+                    <a class="" href="#"><img src="/img/interface/logo-small.png" alt="Logo do cenário de campanha de Kold" title="Kold, um mundo de aventuras"></a>
                 </div>
 
-                <button id="loginMobile" class="btn btn-link" type="button">Login</button>
+                <a href="#" class="login-mobile">Login</a>
 
-                <div class="itensMenu">
+                <div class="itens-menu">
                     <a class="" href="#">Histórias</a>
                     <a class="" href="#">Raças</a>
                     <a class="" href="#">Regiões</a>
@@ -76,132 +84,136 @@
                     <a class="" href="#">Personagens</a>
                 </div>
 
-                <form id="formBusca" class="form-inline">
+                <form class="form-busca">
                 
                     <div class="input-group">
                         
-                        <input class="inputBusca" type="text" placeholder="Buscar...">
-                        <button class="buttonBusca" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
+                        <input class="input-busca input-hide" type="text" placeholder="Buscar...">
+                        <button class="btn-busca btn-show" type="button"><i class="fa fa-search" aria-hidden="true"></i></button>
 
                     </div>
 
                 </form>
 
-                <button id="loginDesktop" class="btn btn-link" type="button">Login</button>
+                <a href="#" class="login-desktop">Login</a>
 
             </div>
 
         </nav>
         
     </header>
-       
-    <div id="bannerTop" class="container-fluid">
-        <img class="img-fluid" src="/img/banner-01.jpg" alt="Banner Principal">
-
-        <div class="caption">
+     
+    <div class="container-fluid banner-top">
+        
+        <div class="container banner-caption no-padding">
             
-            <h2 class="titulo2">Bem vindo, Aventureiro</h2>
+            <div class="caption">
+            
+                <h2 class="titulo2">Bem vindo, Aventureiro</h2>
 
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec pharetra commodo ipsum fringilla euismod. In a quam id felis consequat dignissim. Quisque et condimentum enim. Duis eu mauris porta, laoreet lacus auctor, elementum nibh. Praesent accumsan ac nibh in fringilla.</p>
+                <p>Conheça o cenário de Kold, um mundo vasto e cheio de aventuras. Viaje pelos seus continentes, conheça as histórias de cada reino, navegue pelo mar de ugri, se sobreviver, um destino ainda mais difícil o aguarda em Arsil, lar das tribos de lendários guerreiros bárbaros.</p>
 
-            <p><a href="#">Ver mais...</a></p>
+                <p><a href="#">Ver mais...</a></p>
+
+            </div>
+
+        </div>
+        
+    </div>
+     
+    <main class="container">
+        
+        <div class="d-flex flex-column">
+
+            <section class="row">
+                
+                <article class="col">
+                    
+                    <img class="float-right" src="img/interface/article-01.png" alt="">
+
+                    <div class="banner-caption-left">
+                        <h1 class="text-uppercase titulo1">Um mundo forjado pela guerra</h1>
+                        <p>Quando os deuses da criação e da destruição se enfrentam em  batalha, o choque de seus poderes alteram toda as estruturas dos planos, criando, modificando e destruindo tudo o que existe...</p>
+
+                        <button type="button" class="button"><a href="#">Ver mais</a></button>
+                    </div>
+                                    
+                </article>
+
+            </section>
+
+            <section class="row">
+
+                <article class="col">
+
+                    <img class="float-left" src="img/interface/article-02.png" alt="">
+
+                    <div class="banner-caption-right">
+                        <h1 class="text-uppercase titulo1">Aonde as aventuras acontecem</h1>
+                        <p>Se aventure pelas terras do grande império, conheça as grandes cidades anãs do reino de Drum`mar, conheça suas riquezas e glórias ou navegue pelo mar sangrento em direção a Arsil, o continente dos bárbaros...</p>
+
+                        <button type="button" class="button"><a href="#">Ver mais</a></button>
+                    </div>                
+
+                </article>
+
+            </section>
+
+            <section class="row">
+
+                <article class="col">
+
+                    <img class="float-right" src="img/interface/article-03.png" alt="">
+                    
+                    <div class="banner-caption-left">
+                        <h1 class="text-uppercase titulo1">Conheça as raças de Kold</h1>
+                        <p>Veja como vivem seres das mais diferentes raças vivem em Kold, desde os humanos no império até a raça de seres vindos dos planos mais distantes da existência...</p>
+
+                        <button type="button" class="button"><a href="#">Ver mais</a></button>
+                    </div>
+
+                </article>
+
+            </section>
 
         </div>
 
-    </div>
-    
-    <main class="container">
-        
-        <section class="row">
-            
-            <article class="col">
-                
-                <img class="float-right" src="img/interface/article-01.png" alt="">
-
-                <div class="banner-caption-left">
-                    <h1 class="text-uppercase titulo1">Um mundo forjado pela guerra</h1>
-                    <p>Quando os deuses da criação e da destruição se enfrentam em  batalha, o choque de seus poderes alteram toda as estruturas dos planos, criando, modificando e destruindo tudo o que existe...</p>
-
-                    <button type="button" class="button"><a href="#">Ver mais</a></button>
-                </div>
-                                
-            </article>
-
-        </section>
-
-        <section class="row">
-
-            <article class="col">
-
-                <img class="float-left" src="img/interface/article-02.png" alt="">
-
-                <div class="banner-caption-right">
-                    <h1 class="text-uppercase titulo1">Aonde as aventuras acontecem</h1>
-                    <p>Se aventure pelas terras do grande império, conheça as grandes cidades anãs do reino de Drum`mar, conheça suas riquezas e glórias ou navegue pelo mar sangrento em direção a Arsil, o continente dos bárbaros...</p>
-
-                    <button type="button" class="button"><a href="#">Ver mais</a></button>
-                </div>                
-
-            </article>
-
-        </section>
-
-        <section class="row">
-
-           <article class="col">
-
-                <img class="float-right" src="img/interface/article-03.png" alt="">
-                
-                <div class="banner-caption-left">
-                    <h1 class="text-uppercase titulo1">Conheça as raças de Kold</h1>
-                    <p>Veja como vivem seres das mais diferentes raças vivem em Kold, desde os humanos no império até a raça de seres vindos dos planos mais distantes da existência...</p>
-
-                    <button type="button" class="button"><a href="#">Ver mais</a></button>
-                </div>
-
-           </article>
-
-        </section>
-
     </main>
-
+    
+    
     <footer class="footer">
 
-        <div class="container">
+        <div class="d-flex container">
+        
+            <div class="col text-center">
+                <img src="img/interface/logo-footer.png" alt="">
+            </div>
             
-            <div class="row">
-
-                <div class="col">
-                    <img src="img/interface/logo-footer.png" alt="">
-                </div>
+            <div class="col">
                 
-                <div class="col">
+                <img class="float-left header-divider" src="img/interface/divisor.png" alt="">
+                <ul class="links">    
                     
-                    <img class="float-left headerDivider" src="img/interface/divisor.png" alt="">
-                    <ul class="links">    
-                        
-                        <h3 class="titulo3">Links Úteis</h3>
+                    <h3 class="titulo3">Links Úteis</h3>
 
-                        <li class="">> Sobre</li>
-                        <li class="">> Histórias</li>
-                        <li class="">> Regiões</li>
-                        <li class="">> Organizações</li>
-                        <li class="">> Personagens</li>
+                    <li class="">> Sobre</li>
+                    <li class="">> Histórias</li>
+                    <li class="">> Regiões</li>
+                    <li class="">> Organizações</li>
+                    <li class="">> Personagens</li>
 
-                    </ul>
+                </ul>
 
-                </div>
+            </div>
 
-                <div class="col">
-                    <img class="float-left headerDivider" src="img/interface/divisor.png" alt="">
-                    <h3 class="titulo3">Siga-nos</h3>
-                    <p>Link para o Facebook</p>
-                </div>
+            <div class="col">
+                <img class="float-left header-divider" src="img/interface/divisor.png" alt="">
+                <h3 class="titulo3">Siga-nos</h3>
+                <p>Link para o Facebook</p>
+            </div>
 
-                <div class="col">
-                    <img class="goblin" src="img/interface/goblin.png" alt="">
-                </div>
-
+            <div class="col">
+                <img class="goblin" src="img/interface/goblin.png" alt="">
             </div>
 
         </div>
@@ -215,7 +227,7 @@
     </footer>
 
 
-    <script src="/js/menu-slider.js"></script>
+    <script src="/js/functions.js"></script>
 
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
