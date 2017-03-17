@@ -1,19 +1,28 @@
 article {
-    @include border-radius(2px);
-    @include drop-shadow;
-    border: solid 1px $branco;
-    //background: #dadac7;
-    background: url("../img/interface/banner-bg.png") repeat-y;;
-    padding: 50px 0 0 0;
-    margin: 15px;
-
-    img.float-left {
-        margin: -50px 0 0 -15px;
-    }
     
-    img.float-right {
-        margin: -50px -15px 0 0;
+    //background: #dadac7;
+   
+    
+    margin: 15px;
+    position: relative;
+
+    img {
+        @include border-radius(2px);
+        @include drop-shadow;
+        border: solid 1px $branco;
+        display: block;
+        width: 100%;
+        height: auto;
+        cursor: default;
     }
+
+    // img.float-left {
+    //     margin: -50px 0 0 -15px;
+    // }
+    
+    // img.float-right {
+    //     margin: -50px -15px 0 0;
+    // }
 
     p {
         font: 1em "Open Sans", sans-serif;
@@ -26,16 +35,30 @@ article {
     }
 }
 
-// .banner-caption-left {
-//     margin: -20px 0 0 40px;
-// }
+@media (min-width: 769px) {
+    .banner-caption-left {
+        position: absolute;
+        top: 15%;
+        right: 40%;
+        left: 40px;
+    }
 
-// .banner-caption-right {
-//     margin: -20px 15px 0 0;
-// }
-
-@media (max-width: 575px) {
+    .banner-caption-right {
+        position: absolute;
+        top: 15%;
+        left: 45%;
+        right: 30px;
+        width: auto;
+    }
+}
+@media (max-width: 768px) {
     article {
+        @include border-radius(2px);
+        @include drop-shadow;
+        border: solid 1px $branco;
+        background: url("../img/interface/banner-bg.png") repeat-y;;
+        padding: 50px 0 0 0;
+
         img {
             display: none;
         }

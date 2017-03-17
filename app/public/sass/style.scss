@@ -19,8 +19,9 @@ body {
     min-height:100%; 
 }
 header { background: $primary-black; }
-section { margin-top: 50px;}
-
+main {
+    section { margin-top: 50px;}
+}
 .titulo1 {
     font: 1.7em "Lato", sans-serif;
     border-bottom: 1px solid #ffc731;
@@ -46,8 +47,4 @@ section { margin-top: 50px;}
 .titulo3 {
     color: $branco;
     font: 1.3rem "Lato", sans-serif;
-}
-
-.goblin {
-    margin-top: -100px;
 }
