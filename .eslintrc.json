@@ -1,0 +1,16 @@
+{
+  "plugins": [
+    "prettier"
+  ],
+  "extends": ["next/core-web-vitals", "plugin:prettier/recommended"],
+  "rules": {
+    "@next/next/no-sync-scripts": "off",
+    "@next/next/no-img-element": "off",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ]
+  }
+}

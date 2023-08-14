@@ -1,27 +1,33 @@
 {
-  "name": "kold",
-  "version": "1.0.0",
-  "description": "Site do mundo de campanha de Kold",
-  "main": "index.js",
-  "engines": {
-    "node": "6.9.1"
-  },
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "start": "node app.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "keywords": [
-    "Kold",
-    "D&D",
-    "rpg"
-  ],
-  "author": "Renan Garcia",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/renan-ramos/kold"
-  },
-  "license": "ISC",
   "dependencies": {
-    "ejs": "^2.5.6",
-    "express": "^4.14.1"
+    "@types/node": "20.4.5",
+    "@types/react": "18.2.17",
+    "@types/react-dom": "18.2.7",
+    "autoprefixer": "10.4.14",
+    "clsx": "^2.0.0",
+    "eslint": "8.46.0",
+    "eslint-config-next": "13.4.12",
+    "eslint-config-prettier": "^8.7.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "next": "13.4.12",
+    "postcss": "8.4.27",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "tailwind-merge": "^1.14.0",
+    "tailwindcss": "3.3.3",
+    "typescript": "5.1.6"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.1",
+    "prettier-plugin-tailwindcss": "^0.5.2"
   }
 }

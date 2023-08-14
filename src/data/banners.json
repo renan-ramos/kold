@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "src": "/images/article-01.png",
+    "href": "#",
+    "text": "Quando os deuses da criação e da destruição se enfrentam em batalha, o choque de seus poderes alteram toda as estruturas dos planos, criando, modificando e destruindo tudo o que existe...",
+    "title": "Um mundo forjado pela guerra"
+  },
+  {
+    "id": 2,
+    "src": "/images/article-02.png",
+    "href": "#",
+    "text": "Se aventure pelas terras do grande império, conheça as grandes cidades anãs do reino de Drum`mar, conheça suas riquezas e glórias ou navegue pelo mar sangrento em direção a Arsil, o continente dos bárbaros...",
+    "title": "Aonde as aventuras acontecem"
+  },
+  {
+    "id": 3,
+    "src": "/images/article-03.png",
+    "href": "#",
+    "text": "Veja como vivem seres das mais diferentes raças vivem em Kold, desde os humanos no império até a raça de seres vindos dos planos mais distantes da existência...",
+    "title": "Conheça as raças de Kold"
+  }
+]
