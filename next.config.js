@@ -1,4 +1,8 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {}
+const nextConfig = {
+  compiler: {
+    reactRemoveProperties: true
+  }
+}
 
 module.exports = nextConfig
