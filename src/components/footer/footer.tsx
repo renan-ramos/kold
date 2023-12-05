@@ -1,7 +1,7 @@
 const Footer = () => {
   return (
     <footer className="mt-auto w-full py-2 text-center text-white">
-      {/* <section className="">
+      <section className="">
         <div className="flex flex-wrap justify-between">
           <div className="">
             <img src="/images/logo-footer.png" alt="" />
@@ -27,7 +27,7 @@ const Footer = () => {
             />
           </div>
         </div>
-      </section> */}
+      </section>
 
       <div className="">Copyright 2023</div>
     </footer>
