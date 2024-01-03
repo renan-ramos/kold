@@ -5,8 +5,11 @@ import banners from '@/src/data/banners.json'
 const HomePage = () => {
   return (
     <>
-      <Hero />
-      <main className="d-flex flex-column mx-auto py-20 md:max-w-[calc(100%_-_32px)] xl:max-w-screen-lg">
+      {/* <Hero /> */}
+      <main
+        className="d-flex flex-column mx-auto py-20 md:max-w-[calc(100%_-_32px)] xl:max-w-screen-lg"
+        data-testid="home-page"
+      >
         {banners.map((banner, index) => (
           <Banner
             key={banner.id}
