@@ -3,7 +3,7 @@ import {
   SheetContent,
   SheetTitle,
   SheetTrigger
-} from '@/src/components/sheet/sheet'
+} from '@/src/ui/sheet/sheet'
 import { HamburgerMenuIcon } from '@radix-ui/react-icons'
 import { ComponentPropsWithoutRef } from 'react'
 
